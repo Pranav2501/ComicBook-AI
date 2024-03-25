@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import download from 'downloadjs';
 
-const OPENAI_API_KEY = "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"; // Replace with your actual API key
+const OPENAI_API_KEY = "Please paste your key here"; // Replace with your actual API key
 
 function App() {
   const [prompt, setPrompt] = useState("A cute baby sea otter");
