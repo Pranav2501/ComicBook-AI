@@ -51,8 +51,16 @@ npm install --save firebase
 The project is currently hosted using Firebase, kindly use this link: https://comicbook-ai.web.app
 
 ### Video Demo
-Link - https://northeastern.zoom.us/rec/share/cOVEJPE01xjjAkOR0sBZdjtw1oqvWtQhrO3cr_VDYTmrUxDIXc4ZuTW-w5baKPyb.TkfIz3Uq19wb7b_K?startTime=1709348812000
-Passcode: B!KD8bZU
+Project Video Link - https://northeastern.zoom.us/rec/share/R_WZ8jwsK53i9hzqNv81M2Sk83OdLR_yD9QOGWgNAl35y_Wx3ytFp_EvWHSq4D-a.GcxUv05I_rS868tZ?startTime=1712200631000
+Passcode: 0bM9a&G&
+
+Cypress Testing Video - https://northeastern.zoom.us/rec/share/kA4vKjtWmSVd2Iiidt_PP7lMStNX-FM5weymGZlzHgeKI6uZZ2c8XmJDwQsf3G8.ltu1Cs2H_DiqEldS 
+Passcode: e2G&59mf
+
+## E2E Testing - Cypress
+
+The following application has E2E tests done using Cypress. Several usecases are tested which cover basic rendering and functionality of the applications.
+The basic rendering components are header, footer, navbar, buttons, title & custom text. The functionality/use-cases like search, upload, download, generate, database operations, form submissions are all tested as well. The software tests are well-defined in the individual files, which are present in the Cypress Folder -> E2E testing -> 0-comicbookai-testing. The individual test-cases are defined at the top of each file using comments. Please refer to the video link to see the explaination and demo of the code.
 ### LICENSE
 
 The project is licensed user MIT and is publicly available to all for use.
