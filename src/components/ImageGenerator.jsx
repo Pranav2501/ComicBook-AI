@@ -4,7 +4,7 @@ import download from 'downloadjs';
 
 import "./ImageGenerator.css"; 
 
-const OPENAI_API_KEY = "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"; // Replace with your actual API key
+const OPENAI_API_KEY = ""; // Replace with your actual API key
 
 
 function ImageGenerator(){
