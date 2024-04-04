@@ -52,8 +52,9 @@ function ComicBookPage() {
       <Header />
       <NavBar />
       <form onSubmit={handleUpload}>
+        <h1>Upload your comic book generated images</h1>
         <input type="file" name="image" accept="image/*" multiple required />
-        <input type="text" name="text" placeholder="Enter text prompt" required />
+        <input type="text" name="text" placeholder="Enter image text..." required />
         <button type="submit">Upload</button>
       </form>
       <div ref={cardsRef} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>

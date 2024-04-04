@@ -52,8 +52,9 @@ function Upload() {
       <Header />
       <NavBar />
       <form onSubmit={onSubmit}>
+        <h1>Upload your comic book file to cloud-database</h1>
         <input type="file" onChange={onFileChange} />
-        <input type="text" value={title} onChange={onTitleChange} />
+        <input type="text" placeholder="Enter Title" value={title} onChange={onTitleChange} />
         <button type="submit">Upload</button>
       </form>
       {downloadURL && (

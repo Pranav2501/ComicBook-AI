@@ -4,7 +4,7 @@ import download from 'downloadjs';
 
 import "./ImageGenerator.css"; 
 
-const OPENAI_API_KEY = "YOUR KEY"; // Replace with your actual API key
+const OPENAI_API_KEY = "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"; // Replace with your actual API key
 
 
 function ImageGenerator(){
@@ -44,8 +44,13 @@ function ImageGenerator(){
     }
   }
 
-  function downloadImage(url, filename) {
-    download(url, filename);
+  async function downloadImage(url, filename) {
+    try {
+      const response = await axios.get(url, { responseType: 'blob' });
+      download(response.data, filename, 'image/png');
+    } catch (error) {
+      console.error("Error downloading image:", error);
+    }
   }
 
   return (
@@ -77,7 +82,7 @@ function ImageGenerator(){
                 alt={`Generated Image ${index}`}
                 style={{ maxWidth: "100%", height: "auto" }}
               />
-              <button onClick={() => downloadImage(image.url, `image${index}.jpg`)}>Download Image</button>
+              <button onClick={() => downloadImage(image.url, `image${index}.png`)}>Download Image</button>
             </div>
           ))}
         </div>
